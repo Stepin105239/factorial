@@ -10,11 +10,11 @@ INC = -Iunity\
 PROJECT_NAME = FACTORIAL.out
 BUILD = build
 $(PROJECT_NAME): $(SRC)
-	gcc $(SRC) $(INC) -o $(PROJECT_NAME)
+	gcc $(SRC) $(INC) -o TEST_$(PROJECT_NAME)
 all: $(SRC) $(BUILD)
 	gcc $(SRC) $(INC) -o $(PROJECT_NAME)
 run:$(PROJECT_NAME)
-	./${PROJECT_NAME}
+	./TEST_${PROJECT_NAME}
 doc:
 	make -C documentation
 
